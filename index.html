@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1 {
+            width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            /* 滤镜属性 */
+            /* 灰度 0为灰度为0  1为百分百*/
+            filter: grayscale(1);
+            -webkit-filter: grayscale(1);
+            /* 亮度 默认为1  0为全黑 大于1变亮*/
+            filter: brightness(1);
+            -webkit-filter: brightness(1);
+            /* 复古风 0为正常 1为100%复古风*/
+            filter: sepia(2);
+            -webkit-filter: sepia(2);
+            /* 模糊度 单位为px  5个像素合为一个 */
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            /* 对比度 0为没有任何对比度 为灰色 1为正常*/
+            filter: contrast(0);
+            -webkit-filter: contrast(0);
+            /* 饱和度 1为正常 0为灰色*/
+            filter: saturate(0);
+            -webkit-filter: saturate(0);
+            /* 胶片效果 */
+            filter: invert(0);
+            -webkit-filter: invert(0);
+            transition: all 2s;
+        }
+        
+        .img1:hover {
+            filter: grayscale(0);
+            -webkit-filter: grayscale(0);
+            filter: brightness(0);
+            -webkit-filter: brightness(0);
+            filter: sepia(0);
+            -webkit-filter: sepia(0);
+            filter: blur(1);
+            -webkit-filter: blur(1);
+            filter: contrast(1);
+            -webkit-filter: contrast(1);
+            filter: saturate(2);
+            -webkit-filter: saturate(2);
+            filter: invert(2);
+            -webkit-filter: invert(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="./ldh.jpg" alt="" class="img1">
+
+    </div>
+
+</body>
+
+</html>
